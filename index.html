@@ -164,20 +164,13 @@
             The reconstructed Gaussian Garments can be automatically combined into multi-garment outfits and animated with the fine-tuned GNN.              <br><br>
           </p>
         </div>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="TODO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+          </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Paper Video</h2>
-        <div class="publication-video">
-        <iframe width="560" height="315" src="TODO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
-        </div>
-      </div>
-    </div>
-    <!--/ Paper video. -->
   </div>
 </section>
 
@@ -247,10 +240,11 @@
         <hr>
         <img src="assets/images/method.png" height="250" class="center"/>
         <p>
-          Our approach consists of four steps: 1) We initialize the garment's geometry and appearance from a single multi-view frame.
-          2) We register the garment geometry to all multi-view videos。
-          3) we optimize the garment's appearance over the training sequences. 
-          4) we fine-tune a simulation GNN to accurately replicate the garment's real behavior. 
+          Our pipeline consists of four stages: 
+          1) We initialize the garment's 3D mesh and 3dGS-based appearance from a single multi-view frame.
+          2) We register the garment geometry to all multi-view videos.
+          3) We optimize the garment's appearance using the multi-view videos and registered sequences. 
+          4) We refine the garment's behavior, by fine-tuning parameters of the garment simulation Graph Neural Network.
           The resulting garment assets can be directly simulated with the GNN, combined into multi-garment outfits, and resized to fit different body shapes.
           
         </p>
