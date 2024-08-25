@@ -259,10 +259,6 @@
   <div class="hero-body">
       <div class="container">
       <h4 class="title is-3">Tracking-based Registration</h4>
-      <p>
-        We reconstruct each garment with a "mesh+gaussian" based representation. This allows us to track gaussians across different frames, and register under lying mesh. 
-        We achieve registering different topologies of garments using simply visual guidence of RGB images, and physical constraints.
-      </p>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-coffee">
           <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
@@ -353,19 +349,18 @@
           </video>
         </div> -->
       </div>
+      <p>
+        We reconstruct each garment with a "mesh+gaussian" based representation. This allows us to track gaussians across different frames, and register under lying mesh. 
+        We achieve registering different topologies of garments using simply visual guidence of RGB images, and physical constraints.
+      </p>
     </div>
   </div>
 
   
   <div class="hero-body">
     <div class="container">
-    <h4 class="title is-3">Appearance Decomposition</h4>
+    <h4 class="title is-3">Appearance Decomposition</h4>    
     <div id="results-carousel" class="carousel results-carousel">
-      <p>
-        The wrinkles on garment are constantly changing, results in varying shadow patterns and reflections. 
-        We train an appearance model to predict this change based on mesh characteristics -- including normal map, ambient occlusions of both inner andouter surface. 
-        The predicted color offsets well decouple the lighting effects from albedo gaussian textures.
-      </p>
       <div class="item item-coffee">
         <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
           <source src="./assets/videos/appearance/v10006.mp4"
@@ -455,16 +450,18 @@
         </video>
       </div> -->
     </div>
+    <p>
+      The wrinkles on garment are constantly changing, results in varying shadow patterns and reflections. 
+      We train an appearance model to predict this change based on mesh characteristics -- including normal map, ambient occlusions of both inner andouter surface. 
+      The predicted color offsets well decouple the lighting effects from albedo gaussian textures.
+    </p>
+
   </div>
 </div>
 
   <div class="hero-body">
     <div class="container">
     <h4 class="title is-3">Finetuned Garment Behavior</h4>
-    <p>
-      We fine-tune the parameters of a neural simulator to accurately replicate the real-world behavior of garments.
-      In the videos below, bright colors indicate a large deviation from the ground truth (registered mesh), while dark colors signify a close match to the ground truth. 
-      Our final output achieves a closer alignment with the ground truth, resulting in a more realistic garment appearance.    </p>
     <div id="results-carousel" class="carousel results-carousel" slidesToShow="2">
       <div class="item item-coffee">
         <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
@@ -495,6 +492,11 @@
         </video>
       </div>
     </div>
+    <p>
+      We fine-tune the parameters of a neural simulator to accurately replicate the real-world behavior of garments.
+      In the videos above, bright colors indicate a large deviation from the ground truth (registered mesh), while dark colors signify a close match to the ground truth. 
+      Our final output achieves a closer alignment with the ground truth, resulting in a more realistic garment appearance.
+    </p>
     </div>
   </div>
 
