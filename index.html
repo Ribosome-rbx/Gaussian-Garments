@@ -4,12 +4,10 @@
   <meta charset="utf-8">
   <meta name="description"
         content="Project page for Gaussian Garments">
-  <meta name="keywords" content="Gaussian Garments">
+  <meta name="keywords" content="gaussian, avatar, computer vision, computer graphics, paper, research, garments, clothing"/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gaussian Garments: Reconstructing Simulation-Ready Clothing with Photo-Realistic Appearance from Multi-View Video</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -20,7 +18,7 @@
     gtag('js', new Date());
 
     gtag('config', 'G-PYVRSFMDRL');
-  </script> -->
+  </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -32,24 +30,18 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.svg">
+
+  <!-- <link rel="icon" href="static/images/contour.png"> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
-  
   <script src="./static/js/index.js"></script>
-  <style>
-    /* Set the size of the carousel container */
-    .results-carousel {
-        width: 900px; /* Set the width of the carousel */
-        margin: auto; /* Center the carousel */
-    }
-  </style>
-
 </head>
 <body>
+
+
 
 
 <section class="hero">
@@ -57,7 +49,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h2 class="title is-1 publication-title"><b>Gaussian Garments:</b><br>Reconstructing Simulation-Ready Clothing with Photo-Realistic Appearance from Multi-View Video</h2>
+          <h2 class="title  is-2 publication-title"><b>Gaussian Garments:</b><br>Reconstructing Simulation-Ready Clothing with Photo-Realistic Appearance from Multi-View Video</h>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://ribosome-rbx.github.io/">Boxiang Rong</a><sup>*</sup><sub>1</sub>,</span>
@@ -81,8 +73,8 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>ETH Zürich, Switzerland,</span>
-            <span class="author-block"><sup>2</sup>Max Planck Institute for Intelligent Systems, Tübingen, Germany</span>
+            <span class="author-block"><sup>1 </sup>ETH Zürich, Switzerland,</span>
+            <span class="author-block"><sup>2 </sup>Max Planck Institute for Intelligent Systems, Tübingen, Germany</span>
           </div>
 
           <div class="column has-text-centered">
@@ -175,121 +167,21 @@
 </section>
 
 
-<h4 class="title is-3">Tracking-based registration</h4>
-<section class="hero is-light is-small">
-  <div class="hero-body">
-      <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video width="320" height="250" autoplay>
-            <source src="./assets/videos/cropped_registration/00122.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00134.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00136.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00148_o.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00148_u.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00152_l.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00152_o.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00170_l.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00170_u.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00176_l.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00176_o.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00176_u.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/00190.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/10004.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="registration" autoplay controls muted loop playsinline height="250">
-            <source src="./assets/videos/cropped_registration/10006.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<hr>
 <section class="section" id="Method Overview">
-    <div class="container is-max-desktop">
-        <h2 class="title is-3 has-text-centered">Method Overview</h2>
-        <hr>
-        <img src="assets/images/method.png" height="250" class="center"/>
-        <p>
-          Our pipeline consists of four stages: 
-          1) We initialize the garment's 3D mesh and 3dGS-based appearance from a single multi-view frame.
-          2) We register the garment geometry to all multi-view videos.
-          3) We optimize the garment's appearance using the multi-view videos and registered sequences. 
-          4) We refine the garment's behavior, by fine-tuning parameters of the garment simulation Graph Neural Network.
-          The resulting garment assets can be directly simulated with the GNN, combined into multi-garment outfits, and resized to fit different body shapes.
-        </p>
-        <hr>
-    </div>
+  <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Method Overview</h2>
+      <hr>
+      <img src="assets/images/method.png" height="250" class="center"/>
+      <p>
+        Our pipeline consists of four stages: 
+        1) We initialize the garment's 3D mesh and 3dGS-based appearance from a single multi-view frame.
+        2) We register the garment geometry to all multi-view videos.
+        3) We optimize the garment's appearance using the multi-view videos and registered sequences. 
+        4) We refine the garment's behavior, by fine-tuning parameters of the garment simulation Graph Neural Network.
+        The resulting garment assets can be directly simulated with the GNN, combined into multi-garment outfits, and resized to fit different body shapes.
+      </p>
+      <hr>
+  </div>
 </section>
 
 
@@ -298,87 +190,48 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
+      <!-- Outfit Styling -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
+          <h2 class="title is-3">Outfit Styling</h2>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
+            <source src="./assets/videos/1by1drapping.mp4"
                     type="video/mp4">
           </video>
+          <p>
+            We can combine the garments, recovered from different subjects, into complex multi-layer outfits, and simulate them together. Inner layer Gaussians are filtered to avoid penetrations.
+          </p>
         </div>
       </div>
-      <!--/ Visual Effects. -->
+      <!--/ Outfit Styling -->
 
-      <!-- Matting. -->
+      <!-- Resizing. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">Garment Resizing </h2>
         <div class="columns is-centered">
           <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
             <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
+              <source src="./assets/videos/resizing.mp4"
                       type="video/mp4">
             </video>
+            <p>
+              With the well trained gaussian appearance, we can also automatically resize the garments to match desired body shapes. 
+            </p>
           </div>
 
         </div>
       </div>
     </div>
-    <!--/ Matting. -->
+    <!--/ Resizing. -->
 
-    <!-- Animation. -->
+    <!-- Multi-layer. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Interpolating states</h3>
+        <h2 class="title is-3">Multi-layer Simulations</h2>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
+            We use a Graph Neural Network, and fine-tune the GNN parameters to simulate garments with real-world behavior. 
+            Our trained appearance model can be applied to any simulated mesh (not only the GNN output), and is robust to dynamic sequences under multi-layer settings.
           </p>
         </div>
         <div class="content has-text-centered">
@@ -388,45 +241,263 @@
                  preload
                  playsinline
                  width="75%">
-            <source src="./static/videos/replay.mp4"
+            <source src="./assets/videos/multi-layer.mp4"
                     type="video/mp4">
           </video>
         </div>
-        <!--/ Re-rendering. -->
 
       </div>
     </div>
     <!--/ Animation. -->
 
+  </div>
+</section>
 
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
+ 
+<h3 class="title is-3 has-text-centered">More Results</h3>
+<section class="hero is-light is-small">
+  <div class="hero-body">
+      <div class="container">
+      <h4 class="title is-3">Tracking-based Registration</h4>
+      <p>
+        We reconstruct each garment with a "mesh+gaussian" based representation. This allows us to track gaussians across different frames, and register under lying mesh. 
+        We achieve registering different topologies of garments using simply visual guidence of RGB images, and physical constraints.
+      </p>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-coffee">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/10006.mp4"
+                    type="video/mp4">
+          </video>
         </div>
+        <div class="item item-coffee">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00152_o.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00148_o.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00134.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00190.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/10004.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00136.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00148_u.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-steve">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00122.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00152_l.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00170_l.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00170_u.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00176_l.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00176_o.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!-- <div class="item item-coffee">
+          <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/cropped_registration/00176_u.mp4"
+                    type="video/mp4">
+          </video>
+        </div> -->
       </div>
     </div>
-    <!--/ Concurrent Work. -->
-
   </div>
+
+  
+  <div class="hero-body">
+    <div class="container">
+    <h4 class="title is-3">Appearance Decomposition</h4>
+    <div id="results-carousel" class="carousel results-carousel">
+      <p>
+        The wrinkles on garment are constantly changing, results in varying shadow patterns and reflections. 
+        We train an appearance model to predict this change based on mesh characteristics -- including normal map, ambient occlusions of both inner andouter surface. 
+        The predicted color offsets well decouple the lighting effects from albedo gaussian textures.
+      </p>
+      <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v10006.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00152_outer.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-fullbody">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00148_outer.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-chair-tp">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00134.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00190.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v10004.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-shiba">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00136.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-blueshirt">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00148_upper.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-steve">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00122.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-mask">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00152_lower.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00170_lower.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00170_upper.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00176_lower.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/appearance/v00176_outer.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <!-- <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/cropped_registration/00176_u.mp4"
+                  type="video/mp4">
+        </video>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+  <div class="hero-body">
+    <div class="container">
+    <h4 class="title is-3">Finetuned Garment Behavior</h4>
+    <p>
+      We fine-tune the parameters of a neural simulator to accurately replicate the real-world behavior of garments.
+      In the videos below, bright colors indicate a large deviation from the ground truth (registered mesh), while dark colors signify a close match to the ground truth. 
+      Our final output achieves a closer alignment with the ground truth, resulting in a more realistic garment appearance.    </p>
+    <div id="results-carousel" class="carousel results-carousel" slidesToShow="2">
+      <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/material/00152_outer.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-coffee">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/material/148_upper.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-fullbody">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/material/00170_lower.mp4"
+                  type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-chair-tp">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/material/00176_lower.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="item item-chair-tp">
+        <video poster="" id="registration" autoplay controls muted loop playsinline height="100%">
+          <source src="./assets/videos/material/00120.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    </div>
+  </div>
+
 </section>
 
 
