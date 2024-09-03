@@ -195,7 +195,7 @@
       <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered">Tracking-based Registration</h2>
         <div class="content has-text-centered">
-          <video id="registration" autoplay controls muted loop playsinline width="100%">
+          <video id="registration" controls muted loop playsinline width="100%">
             <source src="./assets/video/registration.mp4" type="video/mp4">
           </video>
         </div>
@@ -215,7 +215,7 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Appearance Decomposition</h2>
-          <video id="appearance" autoplay controls muted loop playsinline height="100%">
+          <video id="appearance" controls muted loop playsinline height="100%">
             <source src="./assets/video/appearance_decomposition.mp4" type="video/mp4">
           </video>
           <p>
@@ -232,7 +232,7 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Finetuned Garment Behavior</h2>
-          <video id="simulate" autoplay controls muted loop playsinline height="100%">
+          <video id="simulate" controls muted loop playsinline height="100%">
             <source src="./assets/video/material.mp4" type="video/mp4">
           </video>
           <p>
@@ -260,7 +260,7 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Garment Mix-and-Match</h2>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+          <video id="dollyzoom" controls muted loop playsinline height="100%">
             <source src="./assets/video/1by1drapping.mp4" type="video/mp4">
           </video>
           <p>We can combine garments recovered from different subjects into complex multi-layer outfits and simulate them together. </p>
@@ -273,7 +273,7 @@
         <h2 class="title is-3">Garment Resizing </h2>
         <div class="columns is-centered">
           <div class="column content">
-            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+            <video id="matting-video" controls muted loop playsinline height="100%">
               <source src="./assets/video/resizing.mp4" type="video/mp4">
             </video>
             <p>With the trained gaussian appearance, we can also automatically resize the garments to match desired body shapes. </p>
@@ -287,17 +287,17 @@
       <!-- Multi-layer. -->
       <div class="column is-full-width">
         <h2 class="title is-3">Multi-layer Simulations</h2>
+        <div class="content has-text-centered">
+          <video id="replay-video" controls muted loop playsinline width="100%">
+            <source src="./assets/video/multi-layer.mp4" type="video/mp4">
+          </video>
+        </div>
         <div class="content has-text-justified">
           <p>
             We use a Graph Neural Network (GNN) and fine-tune its parameters to simulate garments with real-world behavior. 
-            Our trained appearance model can be can be applied to any novel pose, here simulated by the GNN, and is robust in dynamic sequences with multi-layer settings. 
+            Our trained appearance model can be applied to any novel pose, here simulated by the GNN, and is robust in dynamic sequences with multi-layer settings. 
             Additionally, we check the visibility of Gaussians on inner layers and filter out occluded Gaussians to prevent penetrations.
           </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"autoplay controls muted loop playsinline width="100%">
-            <source src="./assets/video/multi-layer.mp4" type="video/mp4">
-          </video>
         </div>
       </div>
       <!--/ Multi-layer. -->
