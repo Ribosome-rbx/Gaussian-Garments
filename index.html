@@ -73,14 +73,14 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1 </sup>ETH Zürich, Switzerland,</span>
+            <span class="author-block"><sup>1 </sup>ETH Zurich, Switzerland,</span>
             <span class="author-block"><sup>2 </sup>Max Planck Institute for Intelligent Systems, Tübingen, Germany</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="TODO"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -88,7 +88,7 @@
                   </span>
                   <span>Paper</span>
                 </a>
-              </span>
+              </span> -->
               <span class="link-block">
                 <a href="TODO"
                    class="external-link button is-normal is-rounded is-dark">
@@ -179,7 +179,7 @@
       </video>
       <p>
         Our pipeline consists of four stages: 
-        1) We initialize the garment's 3D mesh and 3dGS-based appearance from a single multi-view frame.
+        1) We initialize the garment's 3D mesh and 3DGS-based appearance from a single multi-view frame.
         2) We register the garment geometry to all multi-view videos.
         3) We optimize the garment's appearance using the multi-view videos and registered sequences. 
         4) We refine the garment's behavior, by fine-tuning parameters of the garment simulation Graph Neural Network.
@@ -195,7 +195,7 @@
       <div class="column is-full-width">
         <h2 class="title is-3 has-text-centered">Tracking-based Registration</h2>
         <div class="content has-text-centered">
-          <video id="registration" autoplay controls muted loop playsinline width="75%">
+          <video id="registration" autoplay controls muted loop playsinline width="100%">
             <source src="./assets/video/registration.mp4" type="video/mp4">
           </video>
         </div>
@@ -276,7 +276,7 @@
             <video id="matting-video" autoplay controls muted loop playsinline height="100%">
               <source src="./assets/video/resizing.mp4" type="video/mp4">
             </video>
-            <p>With the well trained gaussian appearance, we can also automatically resize the garments to match desired body shapes. </p>
+            <p>With the trained gaussian appearance, we can also automatically resize the garments to match desired body shapes. </p>
           </div>
         </div>
       </div>
@@ -290,12 +290,12 @@
         <div class="content has-text-justified">
           <p>
             We use a Graph Neural Network (GNN) and fine-tune its parameters to simulate garments with real-world behavior. 
-            Our trained appearance model can be applied to any simulated mesh, not just the GNN output, and is robust in dynamic sequences with multi-layer settings. 
-            Additionally, we check the visibility of Gaussians on inner layers and filter out invisible Gaussians to prevent penetrations.
+            Our trained appearance model can be can be applied to any novel pose, here simulated by the GNN, and is robust in dynamic sequences with multi-layer settings. 
+            Additionally, we check the visibility of Gaussians on inner layers and filter out occluded Gaussians to prevent penetrations.
           </p>
         </div>
         <div class="content has-text-centered">
-          <video id="replay-video"autoplay controls muted loop playsinline width="75%">
+          <video id="replay-video"autoplay controls muted loop playsinline width="100%">
             <source src="./assets/video/multi-layer.mp4" type="video/mp4">
           </video>
         </div>
